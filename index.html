@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakyulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="5" id="prevEq">‎ </th> 
+        </tr>
+        <tr>
+            <th colspan="5" id="output">0</th>
+        </tr>
+        <tr>
+            <td><button onclick="buttonNum(7)">7</button></td>
+            <td><button onclick="buttonNum(8)">8</button></td>
+            <td><button onclick="buttonNum(9)">9</button></td>
+            <td><button class="opss" id="btB" onclick="bS()">⌫</button></td>
+            <td><button class="ope" id="bt/" onclick="setOperator('/', this)">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="buttonNum(4)">4</button></td>
+            <td><button onclick="buttonNum(5)">5</button></td>
+            <td><button onclick="buttonNum(6)">6</button></td>
+            <td><button class="opss" onclick="remAll()">AC</button></td>
+            <td><button class="ope" id="bt*" onclick="setOperator('*', this)">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="buttonNum(1)">1</button></td>
+            <td><button onclick="buttonNum(2)">2</button></td>
+            <td><button onclick="buttonNum(3)">3</button></td>
+            <td><button class="opss" id="bt%" onclick="per()">%</button></td>
+            <td><button class="ope" id="bt-" onclick="setOperator('-', this)">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="btCc" onclick="change()">(+/-)</button></td>
+            <td><button onclick="buttonNum(0)">0</button></td>
+            <td><button id="btD" onclick="dec()">.</button></td>
+            <td><button class="ope" id="btEq" onclick="calculate()">=</button></td>
+            <td><button class="ope" id="bt+" onclick="setOperator('+', this)">+</button></td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
